@@ -4,8 +4,7 @@
 [Click here](https://zisum-wedding.netlify.app)
 
 ## Snapshot
-
-![Snapshot](img/Screenshot.png)
+<img width="947" alt="image" src="https://github.com/aishvaryaps/aishvaryaps.github.io/assets/48279639/56548602-39db-4f62-9036-3435f559fc66">
 
 ## Video
 
