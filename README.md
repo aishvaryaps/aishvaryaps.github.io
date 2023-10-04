@@ -1,7 +1,7 @@
 # Wedding Site
 
 **Live Demo** :
-[Click here](https://zisum-wedding.netlify.app)
+[Click here](https://aishvaryaps.github.io/invitation/index.html)
 
 ## Snapshot
 <img width="947" alt="image" src="https://github.com/aishvaryaps/aishvaryaps.github.io/assets/48279639/56548602-39db-4f62-9036-3435f559fc66">
