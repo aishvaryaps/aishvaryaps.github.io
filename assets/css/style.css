@@ -39,7 +39,7 @@ body {
   height: 100%;
   z-index: -2;
   filter: blur(1px);
-  background-image: url(../../img/gold.jpg);
+  background-image: url(../../img/gold3.png);
   background-size: cover;
   background-position: center;
 }
@@ -673,4 +673,54 @@ body {
   to {
     background-position: 200% center;
   }
+}
+
+/* 
+faqs
+ */
+mainfaq {
+  box-sizing: border-box;
+}
+.faqanswer {
+  display: none;
+  width: 590px;
+  background: #e5e5e5;
+  padding: 12px 20px 0 30px;  
+}
+
+.faqanswer p {
+  font-size: 13px;
+  line-height: 17px;  
+}
+
+
+a.active {
+  font-weight: bold;
+}
+
+.togglefaq {
+  text-decoration: none;
+  color: #333;
+  font-size: 13px;
+  padding: 10px 30px;
+  line-height: 20px;
+  display: block;
+  border: 2px solid #ea2e2e;
+  width: 590px;
+  margin-bottom: -2px;
+  
+  text-align: -webkit-left;
+}
+.icon-plus {
+  color: #5ec4cd;
+  margin-right: 20px;
+  font-size: 20px;
+  float:left;
+}
+
+.icon-minus {
+  color: #5ec4cd;
+  margin-right: 20px;
+  font-size: 20px;
+  float:left;
 }
