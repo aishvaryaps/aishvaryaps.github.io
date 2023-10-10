@@ -683,14 +683,18 @@ mainfaq {
 }
 .faqanswer {
   display: none;
-  width: 590px;
+  width: 50%;
   background: #e5e5e5;
-  padding: 12px 20px 0 30px;  
+  padding: 5px  
 }
 
 .faqanswer p {
+	padding: 10px;
+    text-align: -webkit-left;
   font-size: 13px;
   line-height: 17px;  
+  margin-top: 1rem !important;
+  margin-bottom: 1rem;
 }
 
 
@@ -702,13 +706,10 @@ a.active {
   text-decoration: none;
   color: #333;
   font-size: 13px;
-  padding: 10px 30px;
+  padding: 10px 10px;
   line-height: 20px;
   display: block;
-  border: 2px solid #ea2e2e;
-  width: 590px;
-  margin-bottom: -2px;
-  
+  width: 600px;
   text-align: -webkit-left;
 }
 .icon-plus {
