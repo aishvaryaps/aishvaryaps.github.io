@@ -104,8 +104,8 @@ body {
   
   background-image: url(../../img/info-bg.png);
   background-size: cover;
-  min-height: 100vh;
-  /* margin-top: -6rem;*/
+  /*min-height: 100vh;
+   margin-top: -6rem;*/
   padding-top: 5rem;
   padding-bottom: 5rem;   
 }
@@ -272,7 +272,7 @@ body {
   width: 40%;
   float: left;
   border: 1px solid #ccc;
-  padding: 2rem;
+  padding: 1rem;
   position: relative;
   border-radius: 8px;
   background-color: #fff;
@@ -629,23 +629,6 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .animate-charcter
 {
   
@@ -683,8 +666,8 @@ mainfaq {
 }
 .faqanswer {
   display: none;
-  width: 50%;
-  background: #e5e5e5;
+  width: 100%;
+/*   background: #e5e5e5; */
   padding: 5px  
 }
 
@@ -709,7 +692,7 @@ a.active {
   padding: 10px 10px;
   line-height: 20px;
   display: block;
-  width: 600px;
+
   text-align: -webkit-left;
 }
 .icon-plus {
