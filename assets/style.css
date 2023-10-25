@@ -735,3 +735,28 @@ http://static.indigoimages.ca/2016/shop/113439_img25_twotoneheart.png) no-repeat
         -ms-transform-origin: 100% 100%;
             transform-origin :100% 100%;
 }
+
+
+  /* play button blick css*/
+
+    .playbutton {
+       
+        -webkit-animation: glowing 1300ms infinite;
+        -moz-animation: glowing 1300ms infinite;
+        -o-animation: glowing 1300ms infinite;
+        animation: glowing 1300ms infinite;
+      }
+      @-webkit-keyframes glowing {
+        0% {
+         
+          -webkit-box-shadow: 0 0 3px #ea2e2e;
+        }
+        50% {
+          -webkit-box-shadow: 0 0 15px #ea2e2e;
+        }
+        100% {
+         
+          -webkit-box-shadow: 0 0 3px #ea2e2e;
+        }
+      }
+	  
