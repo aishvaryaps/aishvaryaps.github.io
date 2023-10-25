@@ -737,10 +737,7 @@ http://static.indigoimages.ca/2016/shop/113439_img25_twotoneheart.png) no-repeat
 }
 
 
-  /* play button blick css*/
-
-    .playbutton {
-       
+   .playbutton {       
         -webkit-animation: glowing 1300ms infinite;
         -moz-animation: glowing 1300ms infinite;
         -o-animation: glowing 1300ms infinite;
