@@ -650,76 +650,89 @@ setTimeout(function(){
                 <div class="card">
                   <div class="card-body">
                     <div class="col text-start">
-                      <form id="myForm" class="tabel-form" autocomplete="off">			       
 
-			      
-                        <div class="mb-3">
-                          <label for="name" class="form-label"
-                            >Name</label>
-                          <input
-                            type="text"
-                            name="Name"
-                            class="form-control"
-                            id="name"
-                            required
-                            placeholder="Name"
-                          />
-                        </div>
-                       <div class="mb-3">
-                          <label for="email" class="form-label"
-                            >Email</label
-                          >
-                          <input
-                            type="email"
-                            name="Email"
-                            class="form-control"
-                            id="email"
-                            required
-                            placeholder="Email"
-                          />
-                        </div>
-                        <div class="mb-3">
-                          <label for="guest" class="form-label"
-                            >Guest</label
-                          >
-                          <input
-                            type="number"
-                            name="Guest"
-                            class="form-control"
-                            id="guest"
-                            required
-                            placeholder="No. of guest"
-                          />
-                        </div>
-                        <div class="mb-3">
-                          <label
-                            for="message
-                            class="form-label"
-                            >Any Special request</label
-                          >
-                          <textarea
-                            class="form-control"
-                            name="Message"							
-                            id="message comment"
-                            placeholder="We would love to hear from you"
-                            rows="2"
-                            
-                          ></textarea>
-                        </div>
-                        <div class="form-group">
-                          <button onclick="SubForm()"
-                            type="button"
-                            name="submit"
-                            id="btn-whatsapp"
-                            class="btn btn-md"
-                          >                            
-                            Submit
-                          </button>
-						 						
-                        </div>
-						   <p class="confirmation" style="text-align: center!important;"> Thank you for your response</p>
-                      </form>
-                    </div>
+
+			    <form id="myForm" class="tabel-form" autocomplete="off">
+                                 <div class="mb-3">
+                                    <label for="name" class="form-label"
+                                       >Name</label>
+                                    <input
+                                       type="text"
+                                       name="Name"
+                                       class="form-control"
+                                       id="name"
+                                       required
+                                       placeholder="Name"
+                                       />
+                                 </div>
+                                 <div class="mb-3">
+                                    <label for="email" class="form-label"
+                                       >Email</label
+                                       >
+                                    <input
+                                       type="email"
+                                       name="Email"
+                                       class="form-control"
+                                       id="email"
+                                       required
+                                       placeholder="Email"
+                                       />
+                                 </div>
+								
+
+                                 <label for="YesNo" class="form-lable"> Will you be able to attend ?</label> </br>
+								 
+                                 <label for="Yes" class="form-label">Yes</label> <input type="radio" onclick="javascript:yesnoCheck();" name="yesno" value="yes" id="yesCheck">
+                                 <label for="No" class="form-label">No</label> <input type="radio" onclick="javascript:yesnoCheck();" name="yesno" value="no" id="noCheck">
+                                 <label for="Yes" class="form-label">Maybe</label> <input type="radio" onclick="javascript:yesnoCheck();" name="yesno" value="maybe" id="maybeCheck">
+								 <br>
+								 
+                                 <div id="ifYes" style="display:none">
+                                    <div class="mb-3">
+                                       <label for="Guest" class="form-label">Guest</label>
+                                       <input type="number" name="Guest" class="form-control" id="phone" required placeholder="No. of guest" />
+                                                                           </div>
+                                  
+
+ <div class="mb-3">
+                                          <label
+                                             for="message
+                                             class="form-label"
+                                             >Any Special request</label
+                                             >
+                                          <textarea
+                                             class="form-control"
+                                             name="Message"
+                                             id="comment"
+                                             id="message"
+                                             placeholder="We would love to hear from you"
+                                             rows="2"
+                                             required
+                                             ></textarea>
+                                       </div>									
+                                 </div>
+								<!--  <div id="ifYes" style="display:none">
+                                    <div class="mb-3">
+                                       <label for="Fasting" class="form-label">Are you or your guest fasting on 6th or 7th ?</label>
+                                       <input type="text" name="fasting" class="form-control" id="phone" required placeholder="No. of guest" />
+                                                                           </div>
+                                    <br> 
+                                 </div> -->
+                                 <div id="ifNo" style="display:none">
+                                    <div class="mb-3"><label class="form-label">Oh ! We will miss you. Hope you change your mind or we can catch up later</label>
+                                    </div>
+                                    <br> 
+                                 </div>
+                                 <div class="form-group">
+                                    <button onclick="SubForm()" type="button" name="submit" id="btn-whatsapp btnShow" class="submitbutton btn btn-md">                            
+                                    Submit
+                                    </button>
+                                 </div>
+                                 <p id="dialog" class="confirmation" style="text-align: center!important; color:#ea2e2e";"> Thank you for your response</p>
+                              </form>
+			    
+		    
+		    </div>
                   </div>
                 </div>
               </div>
