@@ -46,27 +46,31 @@
   src="https://code.jquery.com/jquery-3.4.1.js"
   integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
   crossorigin="anonymous"></script>
-<script> 	
-function SubForm (){
-    $.ajax({
-        url:'https://api.apispreadsheets.com/data/GzWnLyGF0tLOrQ0W/',
-        type:'post',
-        data:$("#myForm").serializeArray(),
-        success: function(){
-          //alert("Form Data Submitted :)")
-		 
-  $(".confirmation").show(); 
-setTimeout(function(){ 
-	$(".confirmation").hide(); 
-},4000); 
-          },
-        error: function(){
-          alert("There was an error :(")
-		  
-        }
-    });
-	$('#myForm')[0].reset(); 
-}
+<script>
+	function SubForm (){
+             $.ajax({
+                 url:'https://api.apispreadsheets.com/data/y2wxywqdEPXFQb2y/',
+                 type:'post',
+                 data:$("#myForm").serializeArray(),
+                 success: function(){         		 
+           $(".confirmation").show();
+           $(".submitbutton").hide();
+         setTimeout(function(){ 
+         	$(".confirmation").hide();
+         	$(".submitbutton").show();
+         },4000);           
+                 },
+                 error: function(){
+                   alert("There was an error.Please try submiting the form again")         		  
+                 }
+             });
+         	$('#myForm')[0].reset();
+			     document.getElementById('ifYes').style.display = 'none';
+			     document.getElementById('ifNo').style.display = 'none';
+         }
+      </script>
+	  
+	  
 </script> 
   </head>
     <body data-aos="fade-in">
@@ -972,6 +976,23 @@ notthis.toggleClass('active').next('.faqanswer').slideToggle(300);
  $(this).toggleClass('active').next().slideToggle("fast");
 $(this).children('i').toggleClass('icon-plus icon-minus');
 });
+
+
+	function yesnoCheck() {
+             if (document.getElementById('yesCheck').checked) {
+                 document.getElementById('ifYes').style.display = 'block';
+         		 document.getElementById('ifNo').style.display = 'none';
+             }
+			 else if (document.getElementById('maybeCheck').checked) {
+			   document.getElementById('ifYes').style.display = 'block';
+         		 document.getElementById('ifNo').style.display = 'none';
+			 }
+			 
+             else {document.getElementById('ifYes').style.display = 'none';
+          document.getElementById('ifNo').style.display="block"
+         }
+         }
+               
       </script>																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																					 
       <!-- JavaScript End -->
     </body>
