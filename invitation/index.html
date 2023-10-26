@@ -61,7 +61,7 @@
          },4000);           
                  },
                  error: function(){
-                   alert("There was an error. Please try submiting the form again")         		  
+                   alert("There was an error. Please try submiting the form later ")         		  
                  }
              });
          	$('#myForm')[0].reset();
@@ -684,10 +684,14 @@
 
                                  <label for="YesNo" class="form-lable"> Will you be able to attend ?</label> </br>
 								 
-                                 <label for="Yes" class="form-label">Yes</label> <input type="radio" onclick="javascript:yesnoCheck();" name="yesno" value="yes" id="yesCheck">
-                                 <label for="No" class="form-label">No</label> <input type="radio" onclick="javascript:yesnoCheck();" name="yesno" value="no" id="noCheck">
-                                 <label for="Yes" class="form-label">Maybe</label> <input type="radio" onclick="javascript:yesnoCheck();" name="yesno" value="maybe" id="maybeCheck">
+                                 <input type="radio" onclick="javascript:yesnoCheck();" name="yesno" value="yes" id="yesCheck">
+								 <label for="yesCheck" class="form-label"> Gladly accept</label></br>
+                                 <input type="radio" onclick="javascript:yesnoCheck();" name="yesno" value="no" id="noCheck">
+                                 <label for="noCheck" class="form-label"> Regretfully decline</label> 
+								 <!-- <label for="Yes" class="form-label">Maybe</label> <input type="radio" onclick="javascript:yesnoCheck();" name="yesno" value="maybe" id="maybeCheck"> -->
 								 <br>
+								 
+								 
 								 
                                  <div id="ifYes" style="display:none">
                                     <div class="mb-3">
@@ -979,11 +983,11 @@ $(this).children('i').toggleClass('icon-plus icon-minus');
                  document.getElementById('ifYes').style.display = 'block';
          		 document.getElementById('ifNo').style.display = 'none';
              }
-			 else if (document.getElementById('maybeCheck').checked) {
-			   document.getElementById('ifYes').style.display = 'block';
-         		 document.getElementById('ifNo').style.display = 'none';
-			 }
-			 
+		//	 else if (document.getElementById('maybeCheck').checked) {
+		//	   document.getElementById('ifYes').style.display = 'block';
+         	//	 document.getElementById('ifNo').style.display = 'none';
+		//	 }
+		 
              else {document.getElementById('ifYes').style.display = 'none';
           document.getElementById('ifNo').style.display="block"
          }
@@ -991,5 +995,12 @@ $(this).children('i').toggleClass('icon-plus icon-minus');
                
       </script>																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																					 
       <!-- JavaScript End -->
+
+	          <!--
+
+https://www.apispreadsheets.com/table/y2wxywqdEPXFQb2y/
+https://www.apispreadsheets.com/files/y2wxywqdEPXFQb2y
+https://api.apispreadsheets.com/data/y2wxywqdEPXFQb2y
+	  -->
     </body>
 </html>
