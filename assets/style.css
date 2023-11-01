@@ -1,7 +1,7 @@
 :root {
   --pink: #f14e95;
   --bg: #0a0a0a;
-  --shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+  --shadow: 0 2px 2px #ea6565;
 }
 
 body {
@@ -26,7 +26,7 @@ body {
 
 .sosmed a {
   text-decoration: none;
-  color: var(--pink);
+  color: #ea2e2e;
   margin: 0 3px 0 3px;
 }
 
@@ -38,8 +38,9 @@ body {
   width: 100%;
   height: 100%;
   z-index: -2;
-  filter: blur(1px);
-  background-image: url(/img/bg-prewed.jpg);
+  filter: blur(2px);
+ 
+  background-image: url(../../img/aila1.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -69,13 +70,13 @@ body {
 }
 
 .hero a {
-  color: var(--pink);
+  color: #ea2e2e;
   background-color: #eaeaea;
   box-shadow: var(--shadow);
 }
 
 .hero a:hover {
-  background-color: var(--pink);
+  background-color: #ea2e2e;
   color: #eaeaea;
 }
 
@@ -101,12 +102,13 @@ body {
 }
 
 .home {
-  background-image: url(/img/bg.png);
+  
+  background-image: url(../../img/info-bg.png);
   background-size: cover;
-  min-height: 100vh;
-  /* margin-top: -6rem; */
-  padding-top: 15rem;
-  padding-bottom: 5rem;
+  /*min-height: 100vh;
+   margin-top: -6rem;*/
+  padding-top: 5rem;
+  padding-bottom: 5rem;   
 }
 
 .home h2,
@@ -114,7 +116,7 @@ body {
 .story h2,
 .gallery h2,
 .rsvp h2 {
-  color: var(--pink);
+  color: #ea2e2e;
   font-family: "Sacramento", cursive;
   font-size: 5rem;
   font-weight: bold;
@@ -132,13 +134,13 @@ body {
 }
 
 .home .couple {
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .home .couple h3 {
   font-family: "Sacramento", cursive;
   font-size: 2.6rem;
-  color: var(--pink);
+  color: #ea2e2e;
 }
 
 .home .couple img {
@@ -154,7 +156,7 @@ body {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  color: var(--pink);
+  color: #ea2e2e;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   position: absolute;
   left: 50%;
@@ -166,10 +168,13 @@ body {
 }
 
 .info {
-  background-color: var(--bg);
-  color: #eaeaea;
-  padding-top: 10rem;
-  padding-bottom: 8rem;
+background-image: url(../../img/info-bg.png);
+    background-size: cover;
+	
+/*  background-image: url(../../img/sparkling.jpg);*/
+  color: #ba9358;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .info .alamat {
@@ -182,7 +187,7 @@ body {
 }
 
 .info .card {
-  background-color: rgba(255, 255, 255, 0.2) !important;
+  background-color: rgb(244 241 236) !important;
 }
 
 .info .card-header {
@@ -202,8 +207,8 @@ body {
 }
 
 .story {
-  padding-top: 10rem;
-  padding-bottom: 8rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .story span {
@@ -255,7 +260,9 @@ body {
 .timeline li .timeline-image {
   width: 100px;
   height: 100px;
-  background-color: #ccc;
+      background-color: #f0e9e1;
+    border-color: #bf9c66;
+    border-style: solid;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -269,7 +276,7 @@ body {
   width: 40%;
   float: left;
   border: 1px solid #ccc;
-  padding: 2rem;
+  padding: 1rem;
   position: relative;
   border-radius: 8px;
   background-color: #fff;
@@ -294,51 +301,76 @@ body {
 }
 
 .gallery {
-  padding-top: 10rem;
-  padding-bottom: 8rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
   background-color: #dbdada;
 }
 
 .rsvp {
-  padding-top: 10rem;
-  padding-bottom: 8rem;
+	background-image: url(../../img/sparkling.jpg);
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  
 }
 
-.rsvp h3 {
-  font-family: "Work Sans", sans-serif;
-  font-weight: bold;
-  font-size: 3rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
 
 .rsvp p {
-  font-family: "Sacramento", cursive;
-  font-size: 1.9rem;
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.2rem;
 }
 
-.tabel-form {
+.rsvp .card {
+  background: transparent;
+  border: 0;
+  margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.rsvp .card-body {
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  padding: 1.5rem;
+}
+
+.rsvp .card .card-body .form-control {
+  width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ea2e2e;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.rsvp label {
+  color: #ea2e2e;
+}
+
+.rsvp .form-group {
+  border-radius: 3px;
+  display: flex;
   margin: auto;
-  flex-direction: column;
-  height: 500px;
-  background-color: #cccccc2d;
+  justify-content: center;
+}
+
+.rsvp .form-group button {
+  background-color: #ea2e2e;
+  color: white;
+  border: none;
   border-radius: 5px;
+  padding: 10px 10px;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
 }
 
-.tabel-form .form-control {
-  width: 650px;
-}
 
-.tabel-form label {
-  text-align: end !important;
-}
 
 .gifts {
-  padding-top: 10rem;
-  padding-bottom: 8rem;
+	background-image: url(../../img/sparkling.jpg);
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .gifts img {
@@ -346,9 +378,9 @@ body {
 }
 
 .gifts h2 {
-  color: var(--pink);
+  color: #ea2e2e;
   font-family: "Sacramento", cursive;
-  font-size: 5rem;
+  font-size: 3.1rem;
   font-weight: bold;
 }
 
@@ -396,7 +428,7 @@ body {
 .copy-text button {
   padding: 5px 8px;
   box-shadow: var(--shadow);
-  background-color: var(--pink);
+  background-color: #ea2e2e;
   color: white;
   border: none;
   outline: none;
@@ -491,6 +523,7 @@ body {
 
 /* Tablet */
 @media screen and (max-width: 768px) {
+  
   html {
     font-size: 62%;
   }
@@ -498,6 +531,7 @@ body {
   .simply-countdown,
   .simply-section {
     padding: 45px !important;
+	
   }
 
   .navbar {
@@ -519,12 +553,13 @@ body {
     height: 140px;
   }
 
-  .tabel-form .form-control {
-    width: 400px;
-  }
-
   .gifts img {
     width: 135px;
+  }
+
+  .footer {
+    background-color: #dbdada;
+    padding-bottom: 70px;
   }
 }
 
@@ -561,14 +596,11 @@ body {
     width: 50%;
     transform: translateX(-20px);
     margin-top: 10px;
-  }
+  }  
 
-  .tabel-form {
-    height: 300px;
-  }
+  .gifts {
+    margin-top: 14rem;
 
-  .tabel-form .form-control {
-    width: 300px;
   }
 
   .gifts img {
@@ -582,11 +614,256 @@ body {
   }
 }
 
+.confirmation {
+  display: none;
+}
 
 
-/* hearts*/
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.animate-charcter
+{
+  
+  background-image: linear-gradient(
+    -225deg,
+    #ffe1df 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 190px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+/* 
+faqs
+ */
+mainfaq {
+  box-sizing: border-box;
+}
+.faqanswer {
+  display: none;
+  width: 100%;
+/*   background: #e5e5e5; */
+  padding: 5px  
+}
+
+.faqanswer p {
+	padding: 10px;
+    text-align: -webkit-left;
+  font-size: 13px;
+  line-height: 17px;  
+  margin-top: 1rem !important;
+  margin-bottom: 1rem;
+}
+
+
+a.active {
+  font-weight: bold;
+}
+
+.togglefaq {
+  text-decoration: none;
+  color: #333;
+  font-size: 13px;
+  padding: 10px 10px;
+  line-height: 20px;
+  display: block;
+
+  text-align: -webkit-left;
+}
+.icon-plus {
+  color: #5ec4cd;
+  margin-right: 20px;
+  font-size: 20px;
+  float:left;
+}
+
+.icon-minus {
+  color: #5ec4cd;
+  margin-right: 20px;
+  font-size: 20px;
+  float:left;
+}
+
+
+
+/* hearts CSS */
+.x1 {
+  left: 5%;
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+    transform: scale(0.9);
+    opacity: 0.6;
+    -webkit-animation: moveclouds 15s linear infinite, sideWays 4s ease-in-out infinite alternate;
+    -moz-animation: moveclouds 15s linear infinite, sideWays 4s ease-in-out infinite alternate;
+}
+
+.x2 {
+    left: 25%;
+    -webkit-transform: scale(0.6);
+    -moz-transform: scale(0.6);
+    transform: scale(0.6);
+    opacity: 0.9;
+    -webkit-animation: moveclouds 25s linear infinite, sideWays 5s ease-in-out infinite alternate;
+    -moz-animation: moveclouds 25s linear infinite, sideWays 5s ease-in-out infinite alternate;
+}
+.x3 {
+    left: 55%;
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    transform: scale(0.8);
+    opacity: 0.8;
+    -webkit-animation: moveclouds 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
+    -moz-animation: moveclouds 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
+}
+.x4 {
+    left: 72%;
+    -webkit-transform: scale(0.75);
+    -moz-transform: scale(0.75);
+    transform: scale(0.75);
+    opacity: 0.9;
+    -webkit-animation: moveclouds 18s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    -moz-animation: moveclouds 18s linear infinite, sideWays 0zs ease-in-out infinite alternate;
+}
+.x5 {
+    left: 88%;
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    transform: scale(0.8);
+    opacity: 0.3; 
+    -webkit-animation: moveclouds 7s linear infinite, sideWays 1s ease-in-out infinite alternate;
+    -moz-animation: moveclouds 7s linear infinite, sideWays 1s ease-in-out infinite alternate;
+}
+.x6 {
+    left: 33%;
+    opacity: 1; 
+    -webkit-animation: moveclouds 2s linear infinite, swayWays 1s ease-in-out infinite alternate;
+    animation: moveclouds 10s linear infinite, swayWays 9s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes moveclouds { 
+    0% { 
+        top: 500px;
+    }
+    100% { 
+        top: -500px;
+    }
+}
+
+@keyframes moveclouds {     
+    0% { 
+        top: 500px;
+    }
+    100% { 
+        top: -500px;
+    }
+}
+
+@-webkit-keyframes sideWays { 
+    0% { 
+        margin-left:0px;
+    }
+    100% { 
+        margin-left:50px;
+    }
+}
+
+@keyframes sideWays {
+  0% {
+      margin-left:0px;
+  }
+  100% {
+      margin-left:50px;
+  }
+}
+
+@-keyframes swayWays {
+  0% {
+    transform: rotate(12deg);
+    left:-0.3%;
+  }
+  33%{
+    transform: rotate(-2deg);
+    left: 0.7%;
+  }
+  100% {
+    transform: rotate(0deg);
+    left:-12%;
+  }
+}
+
+
+
+
+.altheart {
+  background: url(
+http://static.indigoimages.ca/2016/shop/113439_img25_twotoneheart.png) no-repeat center;
+  width: 24px;
+  height: 21px;
+  position: relative;
+  display: block;
+}
+
+.heart1 {
+    position: relative;
+}
+.heart1:before,
+.heart1:after {
+    position: absolute;
+    content: "";
+    left: 18px;
+    top: 0;
+    width: 18px;
+    height: 30px;
+    background: #CC2022;
+    -moz-border-radius: 20px 50% 0 0;
+    border-radius: 30px 30px 0 0;
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    -webkit-transform-origin: 0 100%;
+        -ms-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+}
+.heart1:after {
+    left: 0;
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -webkit-transform-origin: 100% 100%;
+        -ms-transform-origin: 100% 100%;
+            transform-origin :100% 100%;
+}
 
 
 .x1 {
@@ -736,24 +1013,3 @@ http://static.indigoimages.ca/2016/shop/113439_img25_twotoneheart.png) no-repeat
             transform-origin :100% 100%;
 }
 
-
-   .playbutton {       
-        -webkit-animation: glowing 1300ms infinite;
-        -moz-animation: glowing 1300ms infinite;
-        -o-animation: glowing 1300ms infinite;
-        animation: glowing 1300ms infinite;
-      }
-      @-webkit-keyframes glowing {
-        0% {
-         
-          -webkit-box-shadow: 0 0 3px #ea2e2e;
-        }
-        50% {
-          -webkit-box-shadow: 0 0 15px #ea2e2e;
-        }
-        100% {
-         
-          -webkit-box-shadow: 0 0 3px #ea2e2e;
-        }
-      }
-	  
