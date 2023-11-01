@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="description" content="The Wedding of Aishwarya & Lakshya" />
+      <meta name="keywords" content="The Wedding of Aishwarya and Lakshya" />
+      <meta name="author" content="The Wedding of Aishwarya and Lakshya" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title></title>
+      <!-- Favicon -->
+      <link
+         rel="shortcut icon"
+         href="./img/favicon/favicon.png"
+         type="image/x-icon"
+         />
+      <title>AishuBringsLuck</title>
+      <!-- Bootstrap & Icons -->
+      <link
+         rel="stylesheet"
+         href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+         />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link
+         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+         rel="stylesheet"
+         />
+      <!-- My CSS -->
+      <link rel="stylesheet" href="./assets/css/style.css" />
+      <link rel="stylesheet" href="./assets/css/style-music.css" />
+      <link rel="stylesheet" href="./assets/css/tablet-nav.css" />
+      <link rel="stylesheet" href="./assets/css/comment.css" />
+      <!-- AOS Animated -->
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+      <!-- SimplyCountdown -->
+      <link
+         rel="stylesheet"
+         href="./countdown/simplyCountdown.theme.default.css"
+         />
+      <!-- Google Fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Sacramento&family=Work+Sans:ital,wght@0,100;0,400;0,700;1,600&display=swap"
+         rel="stylesheet"
+         />
+      <script
+         src="https://code.jquery.com/jquery-3.4.1.js"
+         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+         crossorigin="anonymous"></script>
+      <script>
+         function SubForm (){
+                     $.ajax({
+                         url:'https://api.apispreadsheets.com/data/y2wxywqdEPXFQb2y/',
+                         type:'post',
+                         data:$("#myForm").serializeArray(),
+                         success: function(){         		 
+                   $(".confirmation").show();
+                   $(".submitbutton").hide();
+                 setTimeout(function(){ 
+                 	$(".confirmation").hide();
+                 	$(".submitbutton").show();
+                 },4000);           
+                         },
+                         error: function(){
+                           alert("There was an error. Please try submiting the form later ")         		  
+                         }
+                     });
+                 	$('#myForm')[0].reset();
+         		    // document.getElementById('ifYes').style.display = 'none';
+         		    // document.getElementById('ifNo').style.display = 'none';
+                 }
+              
+      </script>
+      </script> 
+   </head>
+   <body data-aos="fade-in">
+      <!-- Navbar Section -->
+      <nav class="navbar navbar-expand-md bg-transparent sticky-top mynavbar">
+         <div class="container">
+            <a class="navbar-brand" href="#">	</a>
+            <button
+               class="navbar-toggler border-0"
+               type="button"
+               data-bs-toggle="offcanvas"
+               data-bs-target="#offcanvasNavbar"
+               aria-controls="offcanvasNavbar"
+               aria-label="Toggle navigation"
+               >
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+               class="offcanvas offcanvas-end"
+               tabindex="-1"
+               id="offcanvasNavbar"
+               aria-labelledby="offcanvasNavbarLabel"
+               >
+               <div class="offcanvas-header">
+                  <!--     <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Zisum</h5> -->
+                  <button
+                     type="button"
+                     class="btn-close"
+                     data-bs-dismiss="offcanvas"
+                     aria-label="Close"
+                     ></button>
+               </div>
+               <div class="offcanvas-body">
+                  <div class="navbar-nav ms-auto">
+                     <a data-scroll class="nav-link" href="#intro">Intro</a>
+                     <a data-scroll class="nav-link" href="#venue">Venue</a>
+                     <a data-scroll class="nav-link" href="#events">Events</a>
+                     <!-- <a data-scroll class="nav-link" href="#gallery">Gallery</a> -->
+                     <a data-scroll class="nav-link" href="#rsvp">RSVP</a>
+                     <a data-scroll class="nav-link" href="#faqs">FAQs</a> 
+                  </div>
+               </div>
+            </div>
+         </div>
+      </nav>
+      <!-- Navbar Tablet Section -->
+      <div class="navbar-tablet">
+         <div class="navbar-links-tablet">
+            <a href="#intro" class="nav-link-tablet">
+            <i class="bi bi-house"></i>
+            <span>Intro</span>
+            </a>
+            <a href="#venue" class="nav-link-tablet">
+            <i class="bi bi-geo bi bi-pin-map"> </i>
+            <span>Venue</span>
+            </a>
+            <a href="#events" class="nav-link-tablet">
+            <i class="bi bi-clock-history"></i>
+            <span>Events</span>
+            </a>
+            <!--  <a href="#gallery" class="nav-link-tablet">
+               <i class="bi bi-image"></i>
+               <span>Gallery</span>
+               </a> -->
+            <a href="#rsvp" class="nav-link-tablet">
+            <i class="bi bi-envelope-open-heart"></i>
+            <span>RSVP</span>
+            </a>
+            <a href="#faqs" class="nav-link-tablet">
+            <i class="bi bi-lightbulb"></i>
+            <span>FAQs</span>
+            </a>
+         </div>
+      </div>
+      <!-- Hero Section -->
+      <section id="hero" class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white overlay-content">
+         <main style="height: 500px;">
+            <div style="width: 100%;    height: 100px;" > <img
+               src="./img/shreeganesh.png"
+               alt="Dev Shree Ganesh"
+               height="100px"          
+               /></div>
+            <!--  <h4>Please join</h4> -->
+            <!--    <p class="textclip  animate-charcter" style="font-family: Sacramento, cursive; font-size: 2rem;">#AishuBringsLuck</p></br> -->
+            <h1 class="textclip  animate-charcter" style="margin-top:15px; font-size:5rem";> Aishwarya & Lakshya</h1>
+            </br>
+            <p class="textclip  animate-charcter" style="font-family: Sacramento, cursive; font-size: 2rem;"> Are getting married</p>
+            </br>
+            <div class="simply-countdown"></div>
+            <div
+               class="d-flex w-75 d-flex justify-content-center align-items-center flex-column mx-auto ">
+               <!--mt-4-->
+               <a
+                  href="#intro"
+                  class="btn btn-md">
+                  <!--mt-4-->
+                  <i class="bi bi-inbox"></i> Open Invitation 
+               </a>
+            </div>
+         </main>
+      </section>
+      <!-- Home Section -->
+      <section id="intro" class="home" style="min-height: 100vh;">
+         <!--  <div class="heart1 x1"></div>
+            <div class="heart1 x2"></div>
+            
+            <div class="heart1 x3"></div>
+             
+            <div class="heart1 x4"></div>
+             <div class="heart1 x5"> </div>-->
+         <div class="container">
+            <div class="row justify-content-center">
+               <div class="col-md-8 text-center">
+                  <img
+                     src="./img/shreeganesh.png"
+                     alt="Dev Shree Ganesh"
+                     height="100px"          
+                     />	  
+                  <h2 style="font-family: Sacramento, cursive; font-size:3.1rem;"> Groom & Bride </h2>
+                  <p>
+                     The wedding will be held on December 07 2023 in Daman
+                  </p>
+                  <p style="color:#ea2e2e"; >#AishuBringsLuck</p>
+                  <!--  <p>
+                     We intend to invite you to attend our wedding.
+                     </p> -->
+               </div>
+            </div>
+            <div class="row couple">
+               <div class="col-lg-6" data-aos="fade-in" data-aos-duration="1000">
+                  <div class="row">
+                     <div class="col-8 text-end">
+                        <h3>Lakshya Sharad Brahmbhatt</h3>
+                        <p>Son of</p>
+                        <p>
+                           Mr. Sharad Brahmbhatt <br />
+                           and <br />
+                           Mrs. Kalpana Sharad Brahmbhatt 
+                        </p>
+                        <!-- <div class="sosmed sosmed-right">
+                           <a href="https://instagram.com/zidanherlangga04_">
+                             <i class="bi bi-instagram"></i>
+                           </a>
+                           <a href="https://twitter.com/dansec04_" target="_blank">
+                             <i class="bi bi-twitter"></i>
+                           </a>
+                           <a href="https://facebook.com/profile.php?id=100092408072498" target="_blank">
+                             <i class="bi bi-facebook"></i>
+                           </a>
+                           <a href="https://linkedin.com/" target="_blank">
+                             <i class="bi bi-linkedin"></i>
+                           </a>
+                           </div> -->
+                     </div>
+                     <div class="col-4">
+                        <img
+                           src="./img/luck.jpeg"
+                           alt="Lakshya"
+                           width="200"
+                           class="img-responsive rounded-circle"
+                           />
+                     </div>
+                  </div>
+               </div>
+               <span class="heart" data-aos-duration="1000"
+                  ><i class="bi bi-heart-fill" data-aos="fade-in"></i
+                  ></span>
+               <div class="col-lg-6" data-aos="fade-in" data-aos-duration="1000">
+                  <div class="row">
+                     <div class="col-4">
+                        <img
+                           src="./img/aishu.jpg"
+                           alt="Aishwarya"
+                           width="200"
+                           class="img-responsive rounded-circle"
+                           />
+                     </div>
+                     <div class="col-8">
+                        <h3>Aishwarya Prabhakar Suryawanshi</h3>
+                        <p>Daughter of</p>
+                        <p>
+                           Late Mr. Prabhakar Suryawanshi<br />
+                           and <br />
+                           Mrs. Tanuja Prabhakar Suryawanshi
+                        </p>
+                        <!--  <div class="sosmed sosmed-left">
+                           <a href="https://instagram.com/smtincm">
+                             <i class="bi bi-instagram"></i>
+                           </a>
+                           <a href="https://twitter.com/" target="_blank">
+                           <i class="bi bi-twitter"></i>
+                           </a>
+                           <a href="https://facebook.com/" target="_blank">
+                             <i class="bi bi-facebook"></i>
+                           </a>
+                           </div> -->
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Info Section -->
+      <section id="venue" class="info" style="min-height: 100vh;">
+         <div class="container">
+            <div class="row justify-content-center">
+               <div class="col-10 text-center justify-content-center">
+                  <h2 style="font-family: Sacramento, cursive; font-size:3.1rem;"> Venue </h2>
+                  <img
+                     src="./img/shreeganesh.png"
+                     alt="Dev Shree Ganesh"
+                     height="100px"          
+                     />
+                  <!--    <p class="alamat">Praveg Beach Resort <br /> -->
+                  </p>
+                  <!--       <a
+                     href="https://goo.gl/maps/1Eexaq6dq19bmsNT8"
+                     target="_blank"
+                     class="btn btn-light btn-sm my-3"><i class="bi bi-map"></i>  Click for Location</a> -->
+                  <p class="description" style="color:#ea2e2e">
+                     Praveg Beach Resort owns two properties in Daman. We have thoughtfully allocated accommodations between these two resorts. The Bride and Groom family will be residing at the Jampore Beach Resort.
+                  </p>
+               </div>
+            </div>
+            <div class="row justify-content-center">
+               <!-- <div class="col-md-8 col-10 text-center justify-content-center">
+                  <p class="alamat">Resorts are at a Distance of 2 KMs. Our resort offers a seamless pick-up and drop-off service between these two oases, operating from 11 AM to 11 PM.</p>             
+                  </div> -->
+            </div>
+            <div class="row justify-content-center mt-4">
+               <div class="col-md-5 col-10 mb-5">
+                  <div
+                     class="card text-center text-white border-light"
+                     data-aos="zoom-in">
+                     <div class="card-header" style="color:#d7ac6c">Praveg Lighthouse Beach Resort</div>
+                     <div class="card-body" style="color:#d7ac6c">
+                        <div class="row justify-content-center">
+                           <div class="col-md-12">
+                              <i class="d-block"></i>
+                              <span>Lighthouse Beach, Near Moti Daman Fort, Moti Daman - 396220</span>
+                           </div>
+                           <!--     <div class="col-md-6">
+                              <i class="bi bi-calendar3 d-block"></i>
+                              <span></span>
+                              </div> -->
+                        </div>
+                     </div>
+                     <div class="card-footer" >
+                        <a
+                           href="https://goo.gl/maps/1Eexaq6dq19bmsNT8"
+                           target="_blank"
+                           class="btn btn-light btn-sm my-3" style="color:#d7ac6c"><i class="bi bi-map"></i>  Click for Location</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-5 col-10">
+                  <div class="card text-center text-white border-light"
+                     data-aos="zoom-in">
+                     <div class="card-header" style="color:#d7ac6c">Praveg Jampore Beach Resort</div>
+                     <div class="card-body" style="color:#d7ac6c">
+                        <div class="row justify-content-center">
+                           <div class="col-md-12">
+                              <i class=" d-block"></i>
+                              <span>Bariyawad Ground, Near Jampore Beach, Moti Daman - 396220</span>
+                           </div>
+                           <!-- <div class="col-md-6">
+                              <i class="bi bi-calendar3 d-block"></i>
+                              <span>Bariyawad Ground, Near Jampore Beach, Moti Daman - 396220 Daman</span>
+                              </div> -->
+                        </div>
+                     </div>
+                     <div class="card-footer">
+                        <a
+                           href="https://goo.gl/maps/1EVNJ5BHjMLTzw5RA"
+                           target="_blank"
+                           class="btn btn-light btn-sm my-3"  style="color:#d7ac6c"><i class="bi bi-map"></i>  Click for Location</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Story Section -->
+      <section id="events" class="story" style="background-image:url(./img/mainbg2.jpg);min-height: 100vh;"">
+         <div class="container">
+            <div class="row justify-content-center">
+               <div class="col-md-8 col-10 text-center">
+                  <!--  <span>Funtion Details</span> -->
+                  <h2 style="font-family: Sacramento, cursive; font-size:3.1rem;">Events and Wardrobe planner</h2>
+                  <p>On December 6th, check-in begins at 11:30 AM at Praveg. We'll gather for a delightful lunch by 1:00 PM, and post-lunch, we'll get ready for our first event, the haldi ceremony.</p>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col">
+                  <ul class="timeline" style="color:#d7ac6c";>
+                     <li>
+                        <div
+                           class="timeline-image" style="background-image:url(./img/haldi.png)"></div>
+                        <div
+                           class="timeline-panel"
+                           data-aos="fade-right"
+                           data-aos-easing="ease-in-sine"
+                           >
+                           <div class="timeline-heading">
+                              <h3> Haldi</h3>
+                              <p> 6th December 2023 </p>
+                           </div>
+                           <div class="timeline-body">
+                              <p>2pm - 4pm</p>
+                              <p>Attire: Shades of Yellow</p>
+                              <p>Venue:<a href="https://goo.gl/maps/1EVNJ5BHjMLTzw5RA" target="_blank" class="btn btn-light btn-sm" style="color:#d7ac6c"; >  Praveg Jampore Lawn </a>	  			  
+                              </p>
+                              <!-- <h5>Don't forget to bring your smiles and good vibes!</h5> -->
+                           </div>
+                        </div>
+                     </li>
+                     <li class="timeline-inverted">
+                        <div
+                           class="timeline-image"
+                           style="background-image: url(./img/sangeet1.png)"
+                           ></div>
+                        <div
+                           class="timeline-panel"
+                           data-aos="fade-right"
+                           data-aos-easing="ease-in-sine"
+                           >
+                           <div class="timeline-heading">
+                              <h3>Sangeet</h3>
+                              <p>6th December 2023</p>
+                           </div>
+                           <div class="timeline-body">
+                              <p>
+                                 Commencing at 7 PM 
+                              </p>
+                              <p>Attire: Glitz and Glam 
+                              </p>
+                              <p> Venue:  <a href="https://goo.gl/maps/1EVNJ5BHjMLTzw5RA" target="_blank" class="btn btn-light btn-sm" style="color:#d7ac6c";></i>   Praveg Jampore Lawn </a>	  
+                              </p>
+                              <!--   <h5> Get ready to sparkle, shine, and dance the night away</h5>-->
+                           </div>
+                        </div>
+                     </li>
+                     <li>
+                        <div
+                           class="timeline-image"
+                           style="background-image: url(./img/marathi.jpg)"
+                           ></div>
+                        <div
+                           class="timeline-panel"
+                           data-aos="fade-right"
+                           data-aos-easing="ease-in-sine"
+                           >
+                           <div class="timeline-heading">
+                              <h3>Mangalastak</h3>
+                              <p>7th december 2023</p>
+                           </div>
+                           <div class="timeline-body">
+                              <p> 10AM - 2PM </p>
+                              <p>Attire: Traditional Maharashtrian Attire 
+                              </p>
+                              <p>Venue: <a href="https://goo.gl/maps/1Eexaq6dq19bmsNT8" target="_blank" class="btn btn-light btn-sm" style="color:#d7ac6c"; ></i>   Praveg Lighthouse Lawn</a>			  
+                              </p>
+                              <h5></h5>
+                           </div>
+                        </div>
+                     </li>
+                     <li class="timeline-inverted">
+                        <div
+                           class="timeline-image"p
+                           style="background-image: url(./img/gujju1.png)"
+                           ></div>
+                        <div
+                           class="timeline-panel"
+                           data-aos="fade-right"
+                           data-aos-easing="ease-in-sine"
+                           >
+                           <div class="timeline-heading">
+                              <h3>Barat followed by Pheras</h3>
+                              <p> 7th December 2023</p>
+                           </div>
+                           <div class="timeline-body">
+                              <p> 5 pm onwards  </p>
+                              <p>Attire: Tradition Gujrati Attire</p>
+                              <p>Venue: <a href="https://goo.gl/maps/1Eexaq6dq19bmsNT8" target="_blank" class="btn btn-light btn-sm"  style="color:#d7ac6c";> Praveg Lighthouse Lawn</a>		</p>
+                           </div>
+                        </div>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Gallery Section -->
+      <!-- <section id="gallery" class="gallery">
+         <div class="container">
+           <div class="row justify-content-center">
+             <div class="col-md-8 col-10 text-center">
+               <span>Memori Kisah Kami</span>
+               <h2>Galeri Foto</h2>
+               <p>
+                 Setiap gambar
+                 memiliki cerita uniknya sendiri yang menceritakan cinta, tawa,
+                 dan kenangan kami berdua.
+               </p>
+             </div>
+           </div> -->
+      <!--
+         <div
+           class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1 justify-content-center"
+         >
+           <div class="col mt-3">
+             <a
+               href="./img/thumbnail/1s.jpg"
+               data-toggle="lightbox"
+               data-gallery="mygallery"
+             >
+               <img
+                 src="../img/thumbnail/1s.jpg"
+                 alt="Sumiati"
+                 class="img-fluid w-100 rounded"
+                 data-aos="fade-in"
+               />
+             </a>
+           </div>
+           <div class="col mt-3">
+             <a
+               href="../img/thumbnail/2z.jpg"
+               data-toggle="lightbox"
+               data-gallery="mygallery"
+             >
+               <img
+                 src="../img/thumbnail/2z.jpg"
+                 alt="Zidan Herlangga"
+                 class="img-fluid w-100 rounded"
+                 data-aos="fade-in"
+               />
+             </a>
+           </div>
+           <div class="col mt-3">
+             <a
+               href="../img/thumbnail/3s.jpg"
+               data-toggle="lightbox"
+               data-gallery="mygallery"
+             >
+               <img
+                 src="../img/thumbnail/3s.jpg"
+                 alt=""
+                 class="img-fluid w-100 rounded"
+                 data-aos="fade-in"
+               />
+             </a>
+           </div>
+           <div class="col mt-3">
+             <a
+               href="../img/thumbnail/4z.jpg"
+               data-toggle="lightbox"
+               data-gallery="mygallery"
+             >
+               <img
+                 src="../img/thumbnail/4z.jpg"
+                 alt=""
+                 class="img-fluid w-100 rounded"
+                 data-aos="fade-in"
+               />
+             </a>
+           </div>
+           <div class="col mt-3">
+             <a
+               href="../img/thumbnail/5s.jpg"
+               data-toggle="lightbox"
+               data-gallery="mygallery"
+             >
+               <img
+                 src="../img/thumbnail/5s.jpg"
+                 alt=""
+                 class="img-fluid w-100 rounded"
+                 data-aos="fade-in"
+               />
+             </a>
+           </div>
+           <div class="col mt-3">
+             <a
+               href="../img/thumbnail/6z.jpg"
+               data-toggle="lightbox"
+               data-gallery="mygallery"
+             >
+               <img
+                 src="../img/thumbnail/6z.jpg"
+                 alt=""
+                 class="img-fluid w-100 rounded"
+                 data-aos="fade-in"
+               />
+             </a>
+           </div>
+           <div class="col mt-3">
+             <a
+               href="../img/thumbnail/7s.jpg"
+               data-toggle="lightbox"
+               data-gallery="mygallery"
+             >
+               <img
+                 src="../img/thumbnail/7s.jpg"
+                 alt=""
+                 class="img-fluid w-100 rounded"
+                 data-aos="fade-in"
+               />
+             </a>
+           </div>
+           <div class="col mt-3">
+             <a
+               href="../img/thumbnail/8z.jpg"
+               data-toggle="lightbox"
+               data-gallery="mygallery"
+             >
+               <img
+                 src="../img/thumbnail/8z.jpg"
+                 alt=""
+                 class="img-fluid w-100 rounded"
+                 data-aos="fade-in"
+               />
+             </a>
+           </div>
+           <div class="col mt-3">
+             <a
+               href="../img/thumbnail/9s.jpg"
+               data-toggle="lightbox"
+               data-gallery="mygallery"
+             >
+               <img
+                 src="../img/thumbnail/9s.jpg"
+                 alt=""
+                 class="img-fluid w-100 rounded"
+                 data-aos="fade-in"
+               />
+             </a>
+           </div>
+           <div class="col mt-3">
+             <a
+               href="../img/thumbnail/10z.jpg"
+               data-toggle="lightbox"
+               data-gallery="mygallery"
+             >
+               <img
+                 src="../img/thumbnail/10z.jpg"
+                 alt=""
+                 class="img-fluid w-100 rounded"
+                 data-aos="fade-in"
+               />
+             </a>
+           </div>
+         </div>
+         -->
+      <!-- </div>
+         </section> -->
+      <!-- RSVP Section -->
+      <section id="rsvp" class="rsvp" style="min-height: 100vh;">
+         <div class="container">
+         <div class="row justify-content-center text-center">
+            <div class="col-sm-6">
+               <h2 style="font-family: Sacramento, cursive; font-size:3.1rem;">Kindly confirm your presence</h2>
+               <p style="color: #ea2e2e; font-family: Sacramento, cursive; font-size: 2rem;">Please RSVP by 15th november</p>
+               <div class="row">
+                  <div class="card">
+                     <div class="card-body">
+                        <div class="col text-start">
+                           <form id="myForm" class="tabel-form" autocomplete="off">
+                              <div class="mb-3">
+                                 <label for="name" class="form-label"
+                                    >Name</label>
+                                 <input
+                                    type="text"
+                                    name="Name"
+                                    class="form-control"
+                                    id="name"
+                                    required
+                                    placeholder="Name"
+                                    />
+                              </div>
+                              <div class="mb-3">
+                                 <label for="email" class="form-label"
+                                    >Email</label
+                                    >
+                                 <input
+                                    type="email"
+                                    name="Email"
+                                    class="form-control"
+                                    id="email"
+                                    required
+                                    placeholder="Email"
+                                    />
+                              </div>
+                              <label for="YesNo" class="form-lable"> Will you be able to attend ?</label> </br>
+                              <input type="radio" onclick="javascript:yesnoCheck();" name="yesno" value="yes" id="yesCheck">
+                              <label for="yesCheck" class="form-label"> Gladly accept</label></br>
+                              <input type="radio" onclick="javascript:yesnoCheck();" name="yesno" value="no" id="noCheck">
+                              <label for="noCheck" class="form-label"> Regretfully decline</label> 
+                              <br>								 
+                              <div id="ifYes" style="display:none">
+                                 <div class="mb-3">
+                                    <label for="Guest" class="form-label">Guest</label>
+                                    <input type="number" name="Guest" class="form-control" id="phone" required placeholder="No. of guest" />
+                                 </div>
+                                 <div class="mb-3">
+                                    <label
+                                       for="message
+                                       class="form-label"
+                                       >Any Special request</label
+                                       >
+                                    <textarea
+                                       class="form-control"
+                                       name="Message"
+                                       id="comment"
+                                       id="message"
+                                       placeholder="We would love to hear from you"
+                                       rows="2"
+                                       required
+                                       ></textarea>
+                                 </div>
+                              </div>
+                              <!--  <div id="ifYes" style="display:none">
+                                 <div class="mb-3">
+                                    <label for="Fasting" class="form-label">Are you or your guest fasting on 6th or 7th ?</label>
+                                    <input type="text" name="fasting" class="form-control" id="phone" required placeholder="No. of guest" />
+                                                                        </div>
+                                 <br> 
+                                 </div> -->
+                              <div id="ifNo" style="display:none">
+                                 <div class="mb-3"><label class="form-label" style=" font-family: Sacramento, cursive; font-size: 2rem;">Oh! Your presense will be missed. </br>
+                                    I was truly hoping that you would be able to attend</label>
+                                    <br> 
+                                 </div>
+                              </div>
+                              <div class="form-group">
+                                 <button onclick="SubForm()" type="button" name="submit" id="btn-whatsapp btnShow" class="submitbutton btn btn-md">                        
+                                 Submit
+                                 </button>
+                              </div>
+                              <p id="dialog" class="confirmation playbutton" style="text-align: center!important; color:rgb(255 255 255); background-color:#ea2e2e; padding: 5px; border-radius:10px"> Thank you for your response </p>
+                           </form>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Section FAQs -->
+      <section id="faqs" class="gifts">
+         <div class="container">
+            <div class="row justify-content-center text-center">
+               <div class="col">
+                  <h2>FAQs</h2>
+                  <a href="#" class="mainfaq togglefaq"><i class="icon-plus fa fa-plus" style="color:#ea2e2e";></i>Does the resort offer parking facilities for guests?</a>
+                  <div class="faqanswer">
+                     <p>Yes</p>
+                  </div>
+                  <a href="#" class="mainfaq togglefaq"><i class="icon-plus fa fa-plus" style="color:#ea2e2e";></i>Does praveg have 2 properties in daman ?</a>
+                  <div class="faqanswer">
+                     <p>Yes, Praveg has two properties: the Praveg Lighthouse Resort and the Praveg Jampore Resort. We have our guests divided between both resorts. The Haldi and Sangeet ceremonies will take place in the lawn of Praveg Jampore Resort, while the Maharashtrian wedding and Gujarati Vanmalas ceremonies will be hosted at the Lighthouse Beach Resort's lawn.</p>
+                  </div>
+                  <a href="#" class="mainfaq togglefaq"><i class="icon-plus fa fa-plus" style="color:#ea2e2e";></i>How far are these 2 reosrts?</a>
+                  <div class="faqanswer">
+                     <p>"Two resorts are located just 2 kilometers apart. Our resort provides a convenient pick-up and drop-off service between these two locations, operating from 11:11 a.m. to 11:11 p.m. This service is available to all guests for easy transportation between the two resorts. Furthermore, guests have the option to explore the area on bicycle rides.</p>
+                  </div>
+                  <a href="#" class="mainfaq togglefaq"><i class="icon-plus fa fa-plus" style="color:#ea2e2e";></i>How to reach the resort?</a>
+                  <div class="faqanswer">
+                     <p>The nearest railway station to reach Daman is Vapi Junction, which is 12 km away from Daman. A private taxi is available from Vapi to Daman. The nearest airport is Surat International Airport, which is 129 km away from Daman. One can take train to Vapi or direct taxi from Surat to Daman.</p>
+                  </div>
+                  <a href="#" class="mainfaq togglefaq"><i class="icon-plus fa fa-plus" style="color:#ea2e2e";></i>What documents are required for a successful check-in at the resort?</a>
+                  <div class="faqanswer">
+                     <p>We will need a valid government-issued photo ID such as a Adhar, PAN, driver's license. This is used to verify your identity and ensure you are the person who made the reservation.</p>
+                  </div>
+                  <a href="#" class="mainfaq togglefaq"><i class="fa fa-plus icon-plus"  style="color:#ea2e2e";></i>What is the resort's check-in / check-out time?</a>
+                  <div class="faqanswer">
+                     <p>The resort will initiate the check-in process around 11.30 AM on 6th Dec. And Checkout at 12 pm on 8th Dec</p>
+                  </div>
+                  <a href="#" class=" mainfaq togglefaq"><i class=" fa fa-plus icon-plus"  style="color:#ea2e2e";></i> What is your wedding hashtag?</a>
+                  <div class="faqanswer">
+                     <p><i>#AishuBringsLuck</i> </p>
+                  </div>
+                  <a href="#" class="togglefaq mainfaq"><i class="fa fa-plus icon-plus"  style="color:#ea2e2e";></i> I have more questions about your wedding, who can I contact?</a>
+                  <div class="faqanswer">
+                     <p>
+                        Groom's eldest sister - Yesha <a href="https://api.whatsapp.com/send?phone=9819220353" target="_blank">
+                        <i class="fa fa-whatsapp" style="font-size:48px;color:lightgreen"></i></a>
+                        </br>
+                        Groom's second-oldest sister - Nisha <a href="https://api.whatsapp.com/send?phone=8169521045" target="_blank">
+                        <i class="fa fa-whatsapp" style="font-size:48px;color:lightgreen"></i></a>
+                        </br>
+                        Bride's elder sister - Apurva <a href="https://api.whatsapp.com/send?phone=7506261848" target="_blank">
+                        <i class="fa fa-whatsapp" style="font-size:48px;color:lightgreen"></i></a>
+                        </br>
+                        Event co-ordinator - Subhangi <a href="https://api.whatsapp.com/send?phone=9426764278" target="_blank">
+                        <i class="fa fa-whatsapp" style="font-size:48px;color:lightgreen"></i></a>
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!--  <div class="container">
+         <div class="comments">
+           <form id="comment-form">
+             <input id="name" type="text" placeholder="Nama Anda" required><br>
+             <textarea id="comment" placeholder="Tulis komentar Anda..." rows="4" required></textarea><br>
+             <input type="submit" value="Kirim Komentar">
+           </form>
+         </div>
+         </div> -->
+      </section>
+      <!-- Section Gifts -->
+      <!--  <section id="gifts" class="gifts">
+         <div class="container">
+           <div class="row justify-content-center text-center">
+             <div class="col">
+               <h2>Gifts</h2>
+               <img src="../img/logo-dana.png" alt="" />
+               <p class="mt-4">
+                 Silahkan transfer ke rekening a.n ZIDAN HERLANGGA
+               </p>
+             </div>
+           </div>
+           <div class="row justify-content-center text-center">
+             <div class="col">
+               <label class="label">Copy No.Rek</label>
+               <div class="copy-text">
+                 
+                 <input
+                   type="text"
+                   class="text"
+                   value="08512341234"
+                 />
+                 <button title="Copy">
+                   <i class="bi bi-clipboard"></i>
+                 </button>
+               </div>
+             </div>
+           </div>
+           <div class="text-center mt-4">
+             <p>Anda juga bisa mengirim kado fisik ke alamat berikut</p>
+             <br />
+             Gedung Pusdiklat Al-Muhajirien. <br />
+             Jl. Cut Mutia No.17, RT.001/RW.011, Margahayu, Kec. Bekasi Tim.,
+             Kota Bks.
+             <br />
+             <p class="mt-5">Sekian</p>
+             <span class="thankyou" id="typed"></span>
+           </div>
+         </div>
+         </section> -->
+      <!-- Audio -->
+      <div>
+         <audio id="track">
+            <source src="./assets/music/song.mp3" type="audio/mpeg" />
+         </audio>
+         <div id="player-container">
+            <div id="play-pause" class="play playbutton">Pause</div>
+         </div>
+      </div>
+      <!-- Footer -->
+      <!--   <footer class="footer">
+         <div class="container">
+           <div class="row py-5">
+             <div class="col-sm-12 text-center">
+               <h6>© Copyright 2023 <span><a href="" class="text-decoration-none" style="color: #f14e95;">Zidan Herlangga</a></span></h6>
+               <div class="d-flex justify-content-center mt-3">
+                 <a href="https://tiktok.com/" class="me-3 text-dark">
+                   <i class="bi bi-tiktok"></i>
+                 </a>
+                 <a href="https://facebook.com/profile.php?id=100092408072498" class="me-3 text-dark">
+                   <i class="bi bi-facebook"></i>
+                 </a>
+                 <a href="https://instagram/zidanherlangga04_" class="me-3 text-dark">
+                   <i class="bi bi-instagram"></i>
+                 </a>
+               </div>
+             </div>
+           </div>
+           <!-- <div class="row">
+             <div class="col-sm-12 text-center">
+               <h6>Sponsored by:</h6>
+               <div class="row justify-content-center">
+                 <div class="col-6 col-sm-4 col-md-3">
+                   <img src="https://www.britefish.net/wp-content/uploads/2019/07/logo-bootstrap.png" width="200" alt="Sponsor 1" class="img-fluid">
+                 </div>
+               </div>
+             </div>
+           </div> -->
+      <!-- <div class="footer-transp"></div>
+         </div>
+         </footer> -->
+      <!-- JavaScript Start -->
+      <script src="./assets/javascript/script.js"></script>
+      <script src="./assets/javascript/comment.js"></script>
+      <!-- JS CDN Bootstrap -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+      <!-- SimplyCountdown -->
+      <script src="./countdown/simplyCountdown.min.js"></script>
+      <script>
+         simplyCountdown(".simply-countdown", {
+           year: 2023, // required
+           month: 12, // required
+           day: 07, // required
+           hours: 12, // Default is 0 [0-23] integer
+           words: {
+             //words displayed into the countdown
+             days: { singular: "day", plural: "days" },
+             hours: { singular: "hour", plural: "hours" },
+             minutes: { singular: "minute", plural: "minutes" },
+             seconds: { singular: "second", plural: "seconds" },
+           },
+         });
+      </script>
+      <!-- LightBox Bootstrap -->
+      <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
+      <!-- AOS JS -->
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+         AOS.init();
+      </script>
+      <!-- TypIt -->
+      <!--   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+         <script>
+           let typing = new Typed("#typed", {
+             strings: ["Terima Kasih"],
+             typeSpeed: 300,
+             backSpeed: 100,
+             loop: true,
+           });
+         </script> -->
+      <!-- Fitur Komentar -->
+      <script src="./assets/comment.js"></script>
+      <script>
+         //faq toggle stuff 
+         $('.togglefaq').click(function(e) {
+         e.preventDefault();
+         var notthis = $('.active').not(this);
+         notthis.find('.icon-minus').addClass('icon-plus').removeClass('icon-minus');
+         notthis.toggleClass('active').next('.faqanswer').slideToggle(300);
+          $(this).toggleClass('active').next().slideToggle("fast");
+         $(this).children('i').toggleClass('icon-plus icon-minus');
+         });
+         	function yesnoCheck() {
+                      if (
+         			
+         				document.getElementById('yesCheck').checked) {
+                         document.getElementById('ifYes').style.display = 'block';
+                  		document.getElementById('ifNo').style.display = 'none';
+                      }		
+                      else {
+         			
+         			document.getElementById('ifYes').style.display = 'none';
+         			document.getElementById('ifNo').style.display='block'
+                  }
+                  }
+                        
+               
+      </script>																																					 
+      <!-- JavaScript End -->
+      <!--
+         https://www.apispreadsheets.com/table/y2wxywqdEPXFQb2y/
+         https://www.apispreadsheets.com/files/y2wxywqdEPXFQb2y
+         https://api.apispreadsheets.com/data/y2wxywqdEPXFQb2y
+         -->
+   </body>
+</html>
