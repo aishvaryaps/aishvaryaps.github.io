@@ -193,7 +193,8 @@ background-image: url(../../img/info-bg.png);
   font-size: 2rem;
   border-bottom: 1px solid #999;
   text-transform: uppercase;
-  letter-spacing: 0.1rem;
+  /*letter-spacing: 0.1rem;*/
+  font-weight: 700;
 }
 
 .info .card-body {
