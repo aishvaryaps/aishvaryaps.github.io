@@ -379,7 +379,7 @@ background-image: url(../../img/info-bg.png);
 
 .gifts h2 {
   color: #ea2e2e;
-  font-family: "Sacramento", cursive;
+  font-family: Playfair Display,ui-sans-serif,system-ui;
   font-size: 3.1rem;
   font-weight: bold;
 }
