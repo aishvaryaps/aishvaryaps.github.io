@@ -38,8 +38,9 @@ body {
   width: 100%;
   height: 100%;
   z-index: -2;
-  filter: blur(1px);
-  background-image: url(../../img/gold3.png);
+  filter: blur(2px);
+ 
+  background-image: url(../../img/aila1.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -167,7 +168,10 @@ body {
 }
 
 .info {
-  background-image: url(../../img/sparkling.jpg);
+background-image: url(../../img/info-bg.png);
+    background-size: cover;
+	
+/*  background-image: url(../../img/sparkling.jpg);*/
   color: #ba9358;
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -303,6 +307,7 @@ body {
 }
 
 .rsvp {
+	background-image: url(../../img/sparkling.jpg);
   padding-top: 5rem;
   padding-bottom: 5rem;
   
@@ -363,8 +368,9 @@ body {
 
 
 .gifts {
-  padding-top: 10rem;
-  padding-bottom: 8rem;
+	background-image: url(../../img/sparkling.jpg);
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .gifts img {
@@ -374,7 +380,7 @@ body {
 .gifts h2 {
   color: #ea2e2e;
   font-family: "Sacramento", cursive;
-  font-size: 5rem;
+  font-size: 3.1rem;
   font-weight: bold;
 }
 
