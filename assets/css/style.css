@@ -56,7 +56,7 @@ body {
 }
 
 .hero h1 {
-  font-family: "Sacramento", cursive;
+  font-family: Playfair Display,ui-sans-serif,system-ui;
   font-size: 6rem;
 }
 
