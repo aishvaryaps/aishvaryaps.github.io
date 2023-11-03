@@ -682,7 +682,7 @@ mainfaq {
 .faqanswer p {
 	padding: 10px;
     text-align: -webkit-left;
-  font-size: 13px;
+  font-size: 1.5rem;
   line-height: 17px;  
   margin-top: 1rem !important;
   margin-bottom: 1rem;
@@ -696,7 +696,7 @@ a.active {
 .togglefaq {
   text-decoration: none;
   color: #333;
-  font-size: 13px;
+  font-size: 1.5rem;
   padding: 10px 10px;
   line-height: 20px;
   display: block;
