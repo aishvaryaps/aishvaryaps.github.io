@@ -39,7 +39,6 @@ body {
   height: 100%;
   z-index: -2;
   filter: blur(2px);
- 
   background-image: url(../../img/aila1.jpg);
   background-size: cover;
   background-position: center;
@@ -191,13 +190,14 @@ background-image: url(../../img/info-bg.png);
 }
 
 .info .card-header {
+  font-size: 2rem;
   border-bottom: 1px solid #999;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
 }
 
 .info .card-body {
-  font-size: 0.9rem;
+  font-size: 2rem;
 }
 
 .info .card-footer {
