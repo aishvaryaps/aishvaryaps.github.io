@@ -181,7 +181,8 @@ background-image: url(../../img/info-bg.png);
 }
 
 .info .description {
-  font-size: 1rem;
+   color:#ea2e2e;
+  font-size: 1.5rem;
   font-weight: 300;
 }
 
@@ -222,7 +223,7 @@ background-image: url(../../img/info-bg.png);
 }
 
 .story p {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 400;
 }
 
