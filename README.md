@@ -6,11 +6,6 @@
 ## Snapshot
 <img width="947" alt="image" src="https://github.com/aishvaryaps/aishvaryaps.github.io/assets/48279639/56548602-39db-4f62-9036-3435f559fc66">
 
-## Video
-
-<video src="img/Video Demo.mp4" width="700" controls>
-</video>
-
 ## Library
 
 - Bootstrap v5.3 [Link](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
