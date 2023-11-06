@@ -1,8 +1,8 @@
 #player-container #play-pause {
   cursor: pointer;
   text-indent: -999999px;
-  height: 40px;
-  width: 40px;
+  height: 55px;
+  width: 55px;
   border-radius: 50%;
   padding: 25px 25px;
   display: block;
@@ -13,11 +13,10 @@
   background-image: url(../../img/playicon.png);
   background-repeat: no-repeat !important;
   background-position: center;
-  background-size: 16px;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 20px;
-  background-color: #ea2e2e;
+  background-size: 55px;
+  background-color: #fb4c65;
 }
 
 #player-container #plat-pause::before {
