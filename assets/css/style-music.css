@@ -25,7 +25,7 @@
 }
 
 .play {
-  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMiAyNHYtMjRsMjAgMTItMjAgMTJ6Ii8+PC9zdmc+);
+  background-image: url(../../img/playicon.png);
     -webkit-animation: glowing 1300ms infinite;
         -moz-animation: glowing 1300ms infinite;
         -o-animation: glowing 1300ms infinite;
