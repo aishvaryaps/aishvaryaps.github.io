@@ -48,7 +48,25 @@
          src="https://code.jquery.com/jquery-3.4.1.js"
          integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
          crossorigin="anonymous"></script>
-      <script>
+
+	   /*
+
+IMPORTANT: Replace the <version> placeholder in the src URL with a
+version from https://github.com/signalfx/splunk-otel-js-web/releases
+
+*/
+<script src="https://cdn.signalfx.com/o11y-gdi-rum/<version>/splunk-otel-web.js" crossorigin="anonymous"></script>
+<script>
+    SplunkRum.init({
+        realm: "us1",
+        rumAccessToken: "vBcEtLEXzi4Vnn5omEa59Q",
+        applicationName: "RSVP",
+        deploymentEnvironment: "RUM_ENV"
+    });
+</script>
+
+	   
+	   <script>
          function SubForm (){
                      $.ajax({
                          url:'https://api.apispreadsheets.com/data/y2wxywqdEPXFQb2y/',
